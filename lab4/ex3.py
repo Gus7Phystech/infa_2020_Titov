@@ -108,7 +108,7 @@ def draw_ghost(surface, bkg_color, x, y, r, h):
 	ellipse(surface, BLACK_COLOR, (x + 0.25 * r, y - 0.3 * r, r * 0.25, r * 0.25))
 
 	# mouth
-	ellipse(surface, BLACK_COLOR, (x + (0.1 * r)*(-1), y + 0.1 * r, r * 0.7, r * 0.5))
+	ellipse(surface, BLACK_COLOR, (x-r*0.3 +random.randint(-1, 1)*r*0.3, y + 0.1 * r, r * 0.7, r * 0.5))
 
 
 pygame.init()
